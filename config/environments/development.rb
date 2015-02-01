@@ -39,6 +39,6 @@ Rails.application.configure do
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 
-  config.assets.precompile += %w( konacha.css mocha.js konacha/parent.js chai.js konacha/iframe.js)
+  config.assets.precompile += %w( konacha.css mocha.js konacha/parent.js chai.js konacha/iframe.js konacha/runner.js)
   config.assets.precompile += [/.*_spec\.js/]
 end
