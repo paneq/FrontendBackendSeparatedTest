@@ -2,4 +2,6 @@
 
 describe "Abd#sum", ->
   it "returns 0 when the Abc is initialized", ->
-    new Abc().sum().should.equal(0)
+    expect(new Abc().sum()).to.equal(0)
+
+  it "does something else", ->
