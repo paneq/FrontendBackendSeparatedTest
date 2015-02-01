@@ -41,4 +41,8 @@ Rails.application.configure do
 
   config.assets.precompile += %w( konacha.css mocha.js konacha/parent.js chai.js konacha/iframe.js konacha/runner.js)
   config.assets.precompile += [/.*_spec\.js/]
+
+  Konacha.configure do |config|
+    config.driver = :webkit
+  end
 end
